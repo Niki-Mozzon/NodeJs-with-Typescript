@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { PageModel } from '../models/PageModel';
+import { PageModel } from '../models/pageModel';
 
 export class AdminController {
   getDashboard = (req: Request, res: Response, next: NextFunction) => {

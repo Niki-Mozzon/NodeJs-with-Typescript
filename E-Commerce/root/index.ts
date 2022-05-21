@@ -5,7 +5,7 @@ import adminRoutes from './routes/admin/admin';
 import productRoutes from './routes/products';
 import dir from './utils/path';
 import path from 'path';
-import { PageModel } from './models/PageModel';
+import { PageModel } from './models/pageModel';
 
 const app = express();
 const port = 3000;

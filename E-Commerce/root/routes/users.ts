@@ -1,8 +1,8 @@
 import express, { NextFunction, Request, Response } from 'express';
 import fs from 'fs';
 import { UserController } from '../controllers/usersController';
-import { PageModel } from '../models/PageModel';
-import { User } from '../models/User';
+import { PageModel } from '../models/pageModel';
+import { User } from '../models/user';
 
 const router = express.Router();
 

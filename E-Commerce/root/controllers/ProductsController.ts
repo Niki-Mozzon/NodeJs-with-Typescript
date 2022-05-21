@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { PageModel } from '../models/PageModel';
+import { PageModel } from '../models/pageModel';
 
 export class ProductsController {
   getProducts = (req: Request, res: Response, next: NextFunction) => {

@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
-import { PageModel } from '../../models/PageModel';
+import { PageModel } from '../../models/pageModel';
 import dir from '../../utils/path';
 import path from 'path';
 import { AdminController } from '../../controllers/adminController';

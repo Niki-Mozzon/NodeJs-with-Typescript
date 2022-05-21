@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import fs from 'fs';
-import { PageModel } from '../models/PageModel';
-import { User } from '../models/User';
+import { PageModel } from '../models/pageModel';
+import { User } from '../models/user';
 import dir from '../utils/path';
 const usersData = dir + '/data/users.txt';
 
