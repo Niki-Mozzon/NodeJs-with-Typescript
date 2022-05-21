@@ -8,5 +8,6 @@ const router = express.Router();
 const controller: ProductsController = new ProductsController();
 
 router.get('/products', controller.getProducts);
+router.post('/add-product', controller.addProduct);
 
 export = router;
