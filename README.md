@@ -4,19 +4,19 @@ In this repository I'm trying to approach to NodeJs through Typescript in order 
 
 ### 1 Step
 
-This Repository has multiple projects: open the folder of the project you are interested with Visual Studio Code.
+This Repository has multiple projects: open the folder of the project you want to run with Visual Studio Code.
 
 ### 2 Step
 
-Run on the integrated terminal of VSC the command "npm install" and wait for NodeJs Package Manager to finish the installation
+Type on the integrated terminal of VSC "npm install" press enter and wait for NodeJs Package Manager to finish the installation
 
 ### 3 Step
 
-Once the installation it's done type "npm start" and press enter on the same terminal to build the application.
+Once the installation is done run the command "npm start" on the same terminal to build the application.
 
 ### 4 Step
 
-If the application built successfully\* you should be able to enter in the web application client clicking on the following link: http://localhost:3000.
+If the application built successfully\* you should be able to enter in the web application client by clicking on the following link: http://localhost:3000.
 
 #
 
