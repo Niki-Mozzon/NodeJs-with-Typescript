@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Store &bull; <%= model.titlePage%></title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">My Store</a></h1>
+      <nav>
+        <ul style="overflow: auto">
+          <li style="float: left">
+            <a href="/">Home</a>
+          </li>
+          <li style="float: left">
+            <a href="/users">Users</a>
+          </li>
+          <li style="float: left">
+            <a href="/products">Products</a>
+          </li>
+          <li style="float: right">
+            <a href="/admin/dashboard">Admin</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main><%-include(`partials/${model.path}`,{model:model.model}) %></main>
+  </body>
+</html>

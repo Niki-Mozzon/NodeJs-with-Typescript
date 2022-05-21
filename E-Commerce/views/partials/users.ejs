@@ -1,0 +1,17 @@
+<h2 class="title-page">Users</h2>
+<form method="POST" action="add-user">
+  <h3>Add user</h3>
+  <label>Name:</label>
+  <input type="text" name="userName" placeholder="Type the name.." />
+  <button type="submit">Add</button>
+</form>
+<div style="margin: 1rem; padding: 0"></div>
+<% if( model.length===0){ %>
+<div>No people stored else ul each person in model</div>
+<% }else{ %>
+<ul>
+  <% for(let user of model) {%>
+  <li class="row"><%=user.name%></li>
+  <% } %>
+</ul>
+<% } %>
