@@ -5,13 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${file}",
-      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}\\root\\index.ts",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register"
+      ],
+      "runtimeExecutable": "node",
       "console": "integratedTerminal",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
       "restart": true
     }
   ]

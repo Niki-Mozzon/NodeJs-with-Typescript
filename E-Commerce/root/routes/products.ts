@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
+import { ProductsController } from '../controllers/productsController';
 import { PageModel } from '../models/pageModel';
 import { route } from './users';
-import { ProductsController } from '../controllers/productsController';
 
 const router = express.Router();
 

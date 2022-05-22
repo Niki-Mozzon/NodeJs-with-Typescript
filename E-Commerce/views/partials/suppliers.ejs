@@ -1,0 +1,17 @@
+<h2 class="title-page">Suppliers</h2>
+<form method="POST" action="add-supplier">
+  <h3>Add supplier</h3>
+  <label>Name:</label>
+  <input type="text" name="supplierName" placeholder="Type the name.." />
+  <button type="submit">Add</button>
+</form>
+<div style="margin: 1rem; padding: 0"></div>
+<% if( model.length===0){ %>
+<div>No suppliers stored..</div>
+<% }else{ %>
+<ul>
+  <% for(let supplier of model) {%>
+  <li class="row"><%=supplier.name%></li>
+  <% } %>
+</ul>
+<% } %>
