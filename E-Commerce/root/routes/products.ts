@@ -9,5 +9,6 @@ const controller: ProductsController = new ProductsController();
 
 router.get('/products', controller.getProducts);
 router.post('/add-product', controller.addProduct);
+router.post('/delete-product', controller.deleteProduct);
 
 export = router;

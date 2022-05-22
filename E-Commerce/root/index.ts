@@ -3,6 +3,7 @@ import express, { Request, Response, NextFunction, Router } from 'express';
 import userRoutes from './routes/users';
 import adminRoutes from './routes/admin/admin';
 import productRoutes from './routes/products';
+import errorsRoutes from './routes/errors';
 import dir from './utils/path';
 import path from 'path';
 import { PageModel } from './models/pageModel';
@@ -19,13 +20,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(userRoutes);
 app.use(productRoutes);
 app.use(supplierRoutes);
+app.use(supplierRoutes);
 app.use('/admin', adminRoutes);
 
-app.get('/', (req: Request, res: Response) =>
+app.get('/', (req: Request, res: Response, next) =>
   res.render('main', { model: new PageModel('Home', 'home') })
 );
 
-app.use((req: Request, res: Response) =>
-  res.status(404).render('main', { model: new PageModel('Not found', '404') })
-);
+app.use(errorsRoutes);
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

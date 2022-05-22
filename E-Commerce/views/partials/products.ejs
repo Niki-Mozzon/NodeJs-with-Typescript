@@ -11,10 +11,7 @@
 <% }else{ %>
 <ul>
   <% for(let product of model) {%>
-  <li class="row">
-    <span style="margin-right: 1rem"><%= product.id %># </span>
-    <%=product.name%>
-  </li>
+  <li class="row"><%- include (`tools/product-preview`,{model:product}) %></li>
   <% } %>
 </ul>
 <% } %>

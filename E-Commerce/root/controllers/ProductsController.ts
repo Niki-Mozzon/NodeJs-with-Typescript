@@ -26,4 +26,13 @@ export class ProductsController {
       res.redirect('/products');
     });
   };
+
+  deleteProduct = (req: Request, res: Response) => {
+    const id = req.body.productId;
+    fetch('http://localhost:4000/products/' + id, {
+      method: 'DELETE',
+    }).then((data) => {
+      res.redirect('/products');
+    });
+  };
 }

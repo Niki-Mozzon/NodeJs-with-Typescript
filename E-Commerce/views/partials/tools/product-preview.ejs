@@ -1,0 +1,10 @@
+<div class="clearfix">
+  <div style="float: left">
+    <span style="margin-right: 1rem"><%= model.id %># </span>
+    <span><%=model.name%></span>
+  </div>
+  <form action="delete-product" method="post">
+    <input type="number" hidden name="productId" value="<%= model.id %>" />
+    <button style="display: inline; float: right" type="submit">Delete</button>
+  </form>
+</div>
