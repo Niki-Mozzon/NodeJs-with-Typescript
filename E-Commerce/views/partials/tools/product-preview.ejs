@@ -5,7 +5,10 @@
   </div>
   <form action="delete-product" method="post">
     <input type="number" hidden name="productId" value="<%= model.id %>" />
-    <a href="/<%= model.id %>" style="display: inline; float: right" class="btn"
+    <a
+      href="/products/<%= model.id %>"
+      style="display: inline; float: right"
+      class="btn"
       >Details
     </a>
     <button class="btn" style="display: inline; float: right" type="submit">
