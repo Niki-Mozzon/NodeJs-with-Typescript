@@ -1,7 +1,9 @@
 <div class="clearfix">
   <div style="float: left">
-    <span style="margin-right: 1rem"><%= model.id %># </span>
-    <span><%=model.name%></span>
+    <span style="margin-right: 1rem; vertical-align: middle"
+      ><%= model.id %>#
+    </span>
+    <span style="vertical-align: middle"><%=model.name%></span>
   </div>
   <form action="delete-product" method="post">
     <input type="number" hidden name="productId" value="<%= model.id %>" />
