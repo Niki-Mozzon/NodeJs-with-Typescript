@@ -35,4 +35,18 @@ export class ProductsController {
       res.redirect('/products');
     });
   };
+
+  getProductById = (req: Request, res: Response) => {
+    const id = req.params.productId;
+    fetch('http://localhost:4000/products/' + id, {
+      method: 'GET',
+    })
+      .then((data) => data.json())
+      .then((json) => {
+        const product: Product = json;
+        res.render('main', {
+          model: new PageModel(product.name, 'product').setModel(product),
+        });
+      });
+  };
 }
